@@ -1,0 +1,83 @@
+﻿@model MDRownakJahanTanjil_296627.Models.Request
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessageTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessageBody)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReqDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReqDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BloodGroup.GroupName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BloodGroup.GroupName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReqID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
